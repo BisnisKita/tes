@@ -39,6 +39,21 @@
               <input type="number" id="AYAM"  class="form-control" placeholder="Masukan Total Ayam" required>
               <li><p style="font-size: small;">jangan lupa isi data dengan benar!</p></li>
           </div>
+          <div class="input-box">
+            <label for="LELE" class="form-label"><b>Lele</b></label>
+              <input type="number" id="LELE"  class="form-control" placeholder="Masukan Total Lele" required>
+              <li><p style="font-size: small;">jangan lupa isi data dengan benar!</p></li>
+          </div>
+          <div class="input-box">
+            <label for="NILA" class="form-label"><b>Nila</b></label>
+              <input type="number" id="NILA"  class="form-control" placeholder="Masukan Total Nila" required>
+              <li><p style="font-size: small;">jangan lupa isi data dengan benar!</p></li>
+          </div>
+          <div class="input-box">
+            <label for="MAKAN" class="form-label"><b>Total yang di Makan</b></label>
+              <input type="text" id="MAKAN"  class="form-control" placeholder="Masukan Total Yang di Makan ">
+              <li><p style="font-size: small;">Isi jika ada saja!</p></li>
+          </div>
           
          
         </div>
@@ -66,12 +81,18 @@
         var hariKemarin = document.getElementById('JENIS_KELAMIN').value;
         var totalBebek = document.getElementById('BEBEk').value;
         var totalAyam = document.getElementById('AYAM').value;
+        var totalLele = document.getElementById('LELE').value;
+        var totalNila = document.getElementById('NILA').value;
+        var totalMakan = document.getElementById('MAKAN').value;
     
         // Ganti nomor WhatsApp dan pesan sesuai kebutuhan
         var nomorWhatsApp = '6285211042669';
         var pesan = 'Hari: ' + hariKemarin + '\n \n' +
                     'Total Bebek: ' + totalBebek + '\n' +
-                    'Total Ayam: ' + totalAyam;
+                    'Total Ayam: ' + totalAyam + '\n' +
+                    'Total Lele: ' + totalLele + '\n' +
+                    'Total Nila: ' + totalNila + '\n' +
+                     totalMakan  ;
     
         // Buka WhatsApp dengan nomor dan pesan yang telah dibuat
         window.open('https://wa.me/' + nomorWhatsApp + '?text=' + encodeURIComponent(pesan));
